@@ -1,0 +1,9 @@
+
+#breathCircle {
+  width: 6.25rem;
+  height: 6.25rem;
+  opacity: 0;
+  background: #85DCB9;
+  border-radius: 50%;
+  margin: 0 auto;
+}
