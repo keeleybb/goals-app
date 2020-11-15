@@ -1,0 +1,324 @@
+<nav>
+    <div class="nav-wrapper">
+        <div class="row">
+            <div class="col s12">
+                <a href="https://codepen.io/collection/nbBqgY" target="_blank" class="brand-logo">Materialize <span
+                        class="hide-on-small-only">Framework</span>
+                    <span class="hide-on-small-only" style="font-weight: 100; font-size: 0.4em; opacity:0.5;">
+                        v1.0.0
+                    </span>
+                </a>
+                <ul class="right">
+                    <li><a href="https://s.codepen.io/j_holtslander/fullpage/pYvKdg" target="_blank"><i
+                                class="material-icons">fullscreen</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="row">
+        <div class="col s12">
+            <h4>Materialize linear progress bars</h4>
+            <p>Materialize's linear progress bar documentation can be found within the preloader's documentation located
+                <a href="https://materializecss.com/preloader.html">here</a>.</p>
+            <p>See also: <a href="https://codepen.io/j_holtslander/pen/rREwyz" target="_blank">Materialize - Bar
+                    Charts</a></p>
+            <p>Real world usage: <a href="https://jay.holtslander.ca/jay-work-overview.html" target="_blank">On my
+                    personal website</a></p>
+            <h5>Indeterminate</h5>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+            <h5>Determinate</h5>
+            <div class="progress">
+                <div class="determinate" style="width: 70%"></div>
+            </div>
+            <br>
+            <div id="modded">
+                <h4>Modded Materialize linear progress bars</h4>
+                <h5>Modded indeterminate</h5>
+                <div class="progress grey lighten-2 tooltipped" data-position="top" data-tooltip="Loading...">
+                    <div class="indeterminate blue darken-2"></div>
+                </div>
+                <h5>Modded determinate</h5>
+                <div class="progress blue lighten-4 tooltipped" data-position="top"
+                    data-tooltip="Progress was at 50% when tested">
+                    <span>Progress</span>
+                    <div class="determinate blue" style="width: 50%; animation: grow 2s;">50%</div>
+                </div>
+                <div class="progress blue lighten-4 tooltipped" data-position="top"
+                    data-tooltip="The length is 75% more than expected">
+                    <span>Length</span>
+                    <div class="determinate blue" style="width: 75%; animation: grow 2s;">75%</div>
+                </div>
+                <div class="progress blue lighten-4 tooltipped" data-position="top"
+                    data-tooltip="Percentage of 20% was given to this trait.">
+                    <span>Percentage</span>
+                    <div class="determinate blue" style="width: 20%; animation: grow 2s;">20%</div>
+                </div>
+                <div class="progress blue lighten-4 tooltipped" data-position="top"
+                    data-tooltip="65% completion of the first phase has been reached.">
+                    <span>Completion</span>
+                    <div class="determinate blue" style="width: 65%; animation: grow 2s;">65%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="modded" class="row">
+        <div class="col s12">
+            <h5>Within individual collapsibles</h5>
+            <p>Click them to open them and view more details!</p>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Progress<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 50%; animation: grow 2s;">50%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 50% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+            </ul>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Length<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 75%; animation: grow 2s;">75%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 75% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+            </ul>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Percentage<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 20%; animation: grow 2s;">20%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 75% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+            </ul>
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Completion<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 65%; animation: grow 2s;">65%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 65% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div id="modded" class="row">
+        <div class="col s12">
+            <h5>Within a single collapsible</h5>
+            <p>Click them to open them and view more details!</p>
+            <ul class="collapsible" style="">
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Progress<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 50%; animation: grow 2s;">50%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 50% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Length<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 75%; animation: grow 2s;">75%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 50% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Percentage<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 20%; animation: grow 2s;">20%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 50% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+                <li>
+                    <div class="collapsible-header">
+
+                        <div class="progress blue lighten-4">
+                            <span>Completion<i class="material-icons">info_outline</i></span>
+                            <div class="determinate blue" style="width: 65%; animation: grow 2s;">65%</div>
+                        </div>
+
+                    </div>
+                    <div class="collapsible-body">This is information about the progress bar above. In our testing it
+                        was 50% awesome but this may not account for it's overall awesomeness which other estimates
+                        place at around 100%.<br>Source: A guy on the internet</div>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Gitter Chat Link -->
+    <div class="fixed-action-btn"><a class="btn-floating btn-large red" href="https://gitter.im/Dogfalo/materialize"
+            target="_blank"><i class="large material-icons">chat</i></a></div>
+
+
+
+    <h5>Goal: {props.goal} <button onClick={()=> props.deleteGoal(props.goalId)}>I give up</button></h5>
+    <p>Click them to open them and view more details!</p>
+    <ul className="collapsible">
+        <li>
+            <div className="collapsible-header">
+                <div className="progress blue lighten-4">
+                    <span>Progress<i className="material-icons">info_outline</i></span>
+                    <div className="determinate blue" style={{ width: percentage(props.tasks) }}>
+                        {percentage(props.tasks)}</div>
+                </div>
+
+
+
+                <div className="goal">
+                    <div id="modded" className="row">
+                        <div className="col s12">
+                            <h5>Within a single collapsible</h5>
+                            <p>Click them to open them and view more details!</p>
+                            <ul className="collapsible" style="">
+                                <li>
+                                    <div className="collapsible-header">
+
+                                        <div className="progress blue lighten-4">
+                                            <span>Progress<i className="material-icons">info_outline</i></span>
+                                            <div className="determinate blue"
+                                                style={{ width: "50%", animation: "grow 2s" }}>50%</div>
+                                        </div>
+
+                                    </div>
+                                    <div className="collapsible-body">This is information about the progress bar above.
+                                        In our testing it
+                                        was 50% awesome but this may not account for it's overall awesomeness which
+                                        other estimates
+                                        place at around 100%.<br />Source: A guy on the internet</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div id="modded" className="row">
+                        <div className="col s12">
+                            <h5>Within a single collapsible</h5>
+                            <p>Click them to open them and view more details!</p>
+                            <ul className="collapsible">
+                                <li>
+                                    <div className="collapsible-header">
+
+                                        <div className="progress blue lighten-4">
+                                            <span>Progress<i className="material-icons">info_outline</i></span>
+                                            <div className="determinate blue">50%</div>
+                                        </div>
+
+                                    </div>
+                                    <div className="collapsible-body">This is information about the progress bar above.
+                                        In our testing it
+                                        was 50% awesome but this may not account for it's overall awesomeness which
+                                        other estimates
+                                        place at around 100%.Source: A guy on the internet</div>
+                                </li>
+                                <li>
+                                    <div className="collapsible-header">
+
+                                        <div className="progress blue lighten-4">
+                                            <span>Length<i className="material-icons">info_outline</i></span>
+                                            <div className="determinate blue">75%</div>
+                                        </div>
+
+                                    </div>
+                                    <div className="collapsible-body">This is information about the progress bar above.
+                                        In our testing it
+                                        was 50% awesome but this may not account for it's overall awesomeness which
+                                        other estimates
+                                        place at around 100%.Source: A guy on the internet</div>
+                                </li>
+                                <li>
+                                    <div className="collapsible-header">
+
+                                        <div className="progress blue lighten-4">
+                                            <span>Percentage<i className="material-icons">info_outline</i></span>
+                                            <div className="determinate blue">20%</div>
+                                        </div>
+
+                                    </div>
+                                    <div className="collapsible-body">This is information about the progress bar above.
+                                        In our testing it
+                                        was 50% awesome but this may not account for it's overall awesomeness which
+                                        other estimates
+                                        place at around 100%.Source: A guy on the internet</div>
+                                </li>
+                                <li>
+                                    <div className="collapsible-header">
+
+                                        <div className="progress blue lighten-4">
+                                            <span>Completion<i className="material-icons">info_outline</i></span>
+                                            <div className="determinate blue">65%</div>
+                                        </div>
+
+                                    </div>
+                                    <div className="collapsible-body">This is information about the progress bar above.
+                                        In our testing it
+                                        was 50% awesome but this may not account for it's overall awesomeness which
+                                        other estimates
+                                        place at around 100%.Source: A guy on the internet</div>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>

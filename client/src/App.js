@@ -30,11 +30,11 @@ function App() {
   })
   return (
     <Router>
-      <Switch>
-        <userContext.Provider value={{ user: user, setUser: setUser, setGoals: setGoals, goals: goals }}>
-          {/* // @Keeley - This is where we tie user and goal I think... ^^^ */}
-          <Nav isLoggedIn={isLoggedIn} />
-          <div className="page">
+      <userContext.Provider value={{ user: user, setUser: setUser, setGoals: setGoals, goals: goals }}>
+        {/* // @Keeley - This is where we tie user and goal I think... ^^^ */}
+        <Nav isLoggedIn={isLoggedIn} />
+        <div className="page">
+          <Switch>
             <Route exact path={["/", "/signup"]}>
               <SignUpLogin isLoggedIn={isLoggedIn} />
             </Route>
@@ -53,9 +53,9 @@ function App() {
             <Route>
               <NoMatch />
             </Route>
-          </div>
-        </userContext.Provider>
-      </Switch>
+          </Switch>
+        </div>
+      </userContext.Provider>
     </Router>
   );
 }

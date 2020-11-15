@@ -14,7 +14,7 @@ function Nav(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
       <a className="navbar-brand" href="/">
-        {user ? `Hi ${user.username}, Welcome To ` : ""} Surată
+        {/* {props.isLoggedIn ? `Hi ${user.username}, Welcome To ` : ""} Surată */}
       </a>
       <ul className="right hide-on-med-and-down">
         <li><a href="/goals">My Goals</a></li>

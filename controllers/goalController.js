@@ -11,7 +11,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     findById: function (req, res) {
-        // console.log("who is logged in? ", req.user)
+        console.log("who is logged in? ", req.user)
         // console.log(req._passport.session.user._id)
         db.Goal
             .find({ author: req.user._id })
@@ -20,7 +20,7 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     create: function (req, res) {
-        // console.log("passport: ", req._passport.session.user._id, req)
+        console.log("passport: ", req._passport, req)
         // console.log("passport user ", req.user)
         req.body.author = req.user._id
         db.Goal.create(req.body)

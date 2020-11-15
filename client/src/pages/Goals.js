@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import API from "../utils/API";
 import GoalList from "../components/GoalList"
+import "./Goals.css"
 // import moment from 'moment';
 
 function Goals() {
@@ -57,25 +58,29 @@ function Goals() {
 
     return (
         <div className="container">
-            <h1>Set a new goal</h1>
-            <form>
-                <input
-                    onChange={handleInputChange}
-                    name="goal"
-                    placeholder="Enter a new goal"
-                    value={formObject.goal}
-
-                />
-                <label>Target Date</label>
-                <input onChange={handleInputChange} type="date" name="targetDate" id="targetDate" value={formObject.targetDate}></input>
-                <button
-                    disabled={!(formObject.goal)}
-                    onClick={handleFormSubmit}
-                >
-                    Submit Goal
-                    </button>
-            </form>
-
+            <div className="row">
+                <div className="col s12">
+                    <h2>Set a new goal</h2>
+                    <form>
+                        <div className="row" >
+                            <div className="col s12 m7">
+                                <input
+                                    onChange={handleInputChange}
+                                    name="goal"
+                                    placeholder="Enter a new goal"
+                                    value={formObject.goal} />
+                            </div>
+                            <div className="col s12 m5">
+                                <input onChange={handleInputChange} type="date" name="targetDate" id="targetDate" value={formObject.targetDate} style={{ width: "200px", margin: "0px 10px" }} />
+                                <button className="btn teal darken-2"
+                                    disabled={!(formObject.goal)}
+                                    onClick={handleFormSubmit}>
+                                    Submit Goal</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
             <div className="row">
                 {goal.map(goals => {
                     // console.log(goals.Tasks)

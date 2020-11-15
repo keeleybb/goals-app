@@ -6,11 +6,6 @@ const dbConnection = require("./dbConnection");
 const routes = require("./routes");
 const app = express();
 const PORT = process.env.PORT || 3001;
-// var passport = require("./config/passport");
-// const mongoose = require("mongoose");
-// const morgan = require('morgan');
-// const dbConnection = require('./models'); 
-// const user = require('./routes/api/user');
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
@@ -18,7 +13,7 @@ app.use(express.json());
 
 app.use(session({
   secret: "piano-cat",
-  store: new MongoStore({ url: process.env.MONGODB_URI || 'mongodb://localhost/surata', ttl: 24 * 3600 }),
+  store: new MongoStore({ url: process.env.MONGODB_URI || 'mongodb+srv://keeley.blakley@gmail.com:kb1023024@cluster-gjs3lbzt.zeg7h.mongodb.net/heroku_gjs3lbzt?retryWrites=true&w=majority', ttl: 24 * 3600 }),
   resave: true,
   saveUninitialized: true
 }));
@@ -30,9 +25,6 @@ app.use(passport.session()); // calls the deserializeUser
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/surata', {useNewUrlParser:true, useFindAndModify:false})
-// app.use(routes);
 
 // Add routes, both API and view
 app.use(routes);

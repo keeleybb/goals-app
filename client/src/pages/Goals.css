@@ -1,0 +1,10 @@
+.container {
+    padding:20px;
+}
+.btn:disabled,
+button[disabled] {
+    background-color: aqua;
+}
+.pt10 {
+    padding: 0px 10px;
+}
